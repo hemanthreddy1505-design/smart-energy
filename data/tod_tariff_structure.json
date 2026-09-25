@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "standard": "Indian Electricity Tariff Regulation & CEA Guidelines",
+    "currency": "INR (\u20b9)",
+    "baseline_co2_kg_per_kwh": 0.82
+  },
+  "discom_profiles": [
+    {
+      "discom_code": "BESCOM-LT2",
+      "name": "Bangalore Electricity Supply Company - Domestic LT-2(a)",
+      "fixed_charges_per_kw_month": 110.0,
+      "slabs": [
+        {
+          "min_kwh": 0,
+          "max_kwh": 50,
+          "rate_per_kwh": 4.15
+        },
+        {
+          "min_kwh": 51,
+          "max_kwh": 100,
+          "rate_per_kwh": 5.6
+        },
+        {
+          "min_kwh": 101,
+          "max_kwh": 200,
+          "rate_per_kwh": 7.15
+        },
+        {
+          "min_kwh": 201,
+          "max_kwh": 999999,
+          "rate_per_kwh": 8.2
+        }
+      ],
+      "tod_tariff": {
+        "enabled": true,
+        "normal_rate_per_kwh": 8.0,
+        "peak_window": {
+          "start": "18:00",
+          "end": "22:00",
+          "multiplier": 1.25,
+          "peak_rate_per_kwh": 10.0
+        },
+        "off_peak_window": {
+          "start": "22:00",
+          "end": "06:00",
+          "multiplier": 0.85,
+          "off_peak_rate_per_kwh": 6.8
+        }
+      }
+    },
+    {
+      "discom_code": "MSEDCL-RES",
+      "name": "Maharashtra State Electricity Distribution - Residential",
+      "fixed_charges_per_kw_month": 128.0,
+      "tod_tariff": {
+        "enabled": true,
+        "normal_rate_per_kwh": 8.5,
+        "peak_window": {
+          "start": "18:00",
+          "end": "22:00",
+          "multiplier": 1.2,
+          "peak_rate_per_kwh": 10.2
+        },
+        "off_peak_window": {
+          "start": "22:00",
+          "end": "06:00",
+          "multiplier": 0.8,
+          "off_peak_rate_per_kwh": 6.8
+        }
+      }
+    }
+  ]
+}

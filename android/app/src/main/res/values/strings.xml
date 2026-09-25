@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Smart Energy Converter</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_appliances">Devices</string>
+    <string name="title_analytics">Analytics</string>
+    <string name="title_alerts">Alerts</string>
+    <string name="title_automations">Automations</string>
+    <string name="title_schedules">Schedules</string>
+    <string name="gateway_online">ESP32-SIM-001 (ONLINE)</string>
+    <string name="connect_laptop">Connect to Backend</string>
+    <string name="server_ip_hint">192.168.1.42:5000</string>
+    <string name="greeting_user">Hello Dhanush!</string>
+    <string name="greeting_subtitle">Let\'s save energy &amp; optimize loads.</string>
+    <string name="action_night_mode">Night Mode</string>
+    <string name="action_eco_shift">Eco Shift</string>
+    <string name="action_work_mode">Work Mode</string>
+    <string name="action_sandbox">Sandbox</string>
+    <string name="live_circuits_title">Live Circuits &amp; Loads</string>
+    <string name="viva_sandbox_btn">+ Viva Sandbox</string>
+</resources>

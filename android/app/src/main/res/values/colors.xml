@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light & Modern Reference Palette -->
+    <color name="bg_light">#F6F7FB</color>
+    <color name="bg_card_white">#FFFFFF</color>
+    <color name="bg_dark">#0C0D12</color>
+    <color name="card_dark">#16171B</color>
+    <color name="card_border">#E2E8F0</color>
+    <color name="card_border_dark">#262833</color>
+
+    <!-- Signature Card Colors (From Mockup) -->
+    <color name="card_purple_primary">#7C3AED</color>
+    <color name="card_purple_dark">#6D28D9</color>
+    <color name="card_amber_back">#F59E0B</color>
+    <color name="card_amber_dark">#D97706</color>
+
+    <!-- Accents & Telemetry -->
+    <color name="emerald_500">#10B981</color>
+    <color name="emerald_400">#34D399</color>
+    <color name="emerald_bg">#1A10B981</color>
+    <color name="amber_500">#F59E0B</color>
+    <color name="amber_bg">#1AF59E0B</color>
+    <color name="rose_500">#F43F5E</color>
+    <color name="rose_bg">#1AF43F5E</color>
+    <color name="blue_500">#3B82F6</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- UI Controls & Docks -->
+    <color name="circle_action_bg">#FFFFFF</color>
+    <color name="circle_action_border">#E2E8F0</color>
+    <color name="floating_dock_bg">#16171B</color>
+    <color name="active_nav_pill_bg">#FFFFFF</color>
+    <color name="active_nav_text">#16171B</color>
+    <color name="inactive_nav_text">#94A3B8</color>
+    <color name="text_slate_400">#94A3B8</color>
+    <color name="text_slate_300">#CBD5E1</color>
+    <color name="chip_selected_bg">#7C3AED</color>
+    <color name="chip_unselected_bg">#F1F5F9</color>
+</resources>

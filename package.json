@@ -1,0 +1,26 @@
+{
+  "name": "smart-energy-converter",
+  "version": "2.0.0",
+  "description": "Smart Energy Conservation - IoT Edge Energy Sensing & Conservation System",
+  "private": true,
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "build": "npm run build --prefix frontend",
+    "postinstall": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "iot",
+    "smart-energy-converter",
+    "energy-conservation",
+    "simulation",
+    "esp32",
+    "mqtt",
+    "ct-sensor"
+  ],
+  "author": "Yash Sunil Bongale, Venkata Sai Ankith G, Aman Thakur, Hemasrija C",
+  "license": "Apache-2.0"
+}

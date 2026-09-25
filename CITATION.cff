@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you utilize Smart Energy Converter in academic research or industrial implementations, please cite this repository as below."
+title: "Smart Energy Converter: IoT-Driven Energy Sensing, Diurnal ML Forecasting & Demand-Side Conservation Platform"
+version: 2.0.0
+date-released: 2026-03-23
+url: "https://github.com/DHNSHYDV/smart_energy"
+authors:
+  - family-names: "Bongale"
+    given-names: "Yash Sunil"
+  - family-names: "Ankith G"
+    given-names: "Venkata Sai"
+  - family-names: "Thakur"
+    given-names: "Aman"
+  - family-names: "C"
+    given-names: "Hemasrija"
+institution:
+  name: "Department of Computer Science and Engineering, New Horizon College of Engineering (NHCE)"
+  address: "Outer Ring Road, Near Marathahalli, Bangalore, Karnataka, India"
+keywords:
+  - "energy-management-system"
+  - "iot"
+  - "smart-grid"
+  - "esp32"
+  - "ct-sensing"
+  - "demand-side-management"
+  - "kotlin-android"

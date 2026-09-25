@@ -1,0 +1,74 @@
+[
+  {
+    "anomaly_id": "ANOM-2026-001",
+    "appliance_id": "AC001",
+    "appliance_name": "Air Conditioner",
+    "channel_id": "CT-CH01",
+    "classification": "COMPRESSOR_LOCKED_ROTOR_STALL",
+    "severity": "CRITICAL",
+    "trigger_rule": "Active Power Surge > 2100 W and Power Factor < 0.72",
+    "observed_metrics": {
+      "power_w": 2450.0,
+      "current_a": 15.2,
+      "power_factor": 0.7,
+      "voltage_v": 228.1,
+      "duration_sec": 14
+    },
+    "root_cause": "Capacitor degradation or mechanical locked rotor stalling in high-ambient conditions",
+    "recommended_action": "Emergency automated breaker trip; inspect dual run capacitor and refrigerant pressure"
+  },
+  {
+    "anomaly_id": "ANOM-2026-002",
+    "appliance_id": "GH001",
+    "appliance_name": "Water Heater / Geyser",
+    "channel_id": "CT-CH08",
+    "classification": "PEAK_TARIFF_COINCIDENCE_SURGE",
+    "severity": "WARNING",
+    "trigger_rule": "High Draw (>2000 W) Active during Evening Peak (18:00-22:00)",
+    "observed_metrics": {
+      "power_w": 2210.0,
+      "current_a": 9.61,
+      "power_factor": 1.0,
+      "voltage_v": 230.0,
+      "duration_sec": 1800
+    },
+    "root_cause": "Manual immersion heater switch-on during grid peak surcharge hours",
+    "recommended_action": "Shift schedule to 05:30-07:00 off-peak buffer; potential monthly savings of \u20b9320"
+  },
+  {
+    "anomaly_id": "ANOM-2026-003",
+    "appliance_id": "PC001",
+    "appliance_name": "Workstation PC",
+    "channel_id": "CT-CH04",
+    "classification": "VAMPIRE_STANDBY_DRAIN",
+    "severity": "INFO",
+    "trigger_rule": "Continuous Standby Power > 45 W for > 4 hours during 01:00-05:00",
+    "observed_metrics": {
+      "power_w": 48.5,
+      "current_a": 0.22,
+      "power_factor": 0.96,
+      "voltage_v": 231.2,
+      "duration_sec": 14400
+    },
+    "root_cause": "Workstation peripherals, dual monitors, and external thunderbolt docks remaining in standby",
+    "recommended_action": "Auto-isolate smart relay on channel CT-CH04 after 30 minutes of idle state"
+  },
+  {
+    "anomaly_id": "ANOM-2026-004",
+    "appliance_id": "MAINS",
+    "appliance_name": "Main Incomer Feeder",
+    "channel_id": "SYSTEM-BUS",
+    "classification": "SANCTIONED_DEMAND_EXCEEDANCE",
+    "severity": "CRITICAL",
+    "trigger_rule": "Aggregate Load > 5000 W Sanctioned Contract Demand",
+    "observed_metrics": {
+      "power_w": 5140.0,
+      "current_a": 23.4,
+      "power_factor": 0.95,
+      "voltage_v": 225.4,
+      "duration_sec": 120
+    },
+    "root_cause": "Concurrent operation of Water Heater, Air Conditioner, and Washing Machine heating cycle",
+    "recommended_action": "Automated demand response (DSM) shed priority-3 loads: delay washing machine wash cycle"
+  }
+]

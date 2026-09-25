@@ -1,0 +1,35 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vite
+frontend/dist/
+frontend/.vite/
+
+# Database & Runtime
+backend/tracker.db
+backend/tracker.db-journal
+backend/tracker.db-wal
+backend/tracker.db-shm
+tracker.db
+tracker.db-journal
+tracker.db-wal
+tracker.db-shm
+.env
+
+# Android
+android/.gradle/
+android/build/
+android/*/build/
+android/*.iml
+android/*/*.iml
+android/local.properties
+android/.idea/
+android/.cxx/
+
+# OS
+.DS_Store
+Thumbs.db

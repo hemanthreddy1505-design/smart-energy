@@ -1,0 +1,10 @@
+.git
+.github
+android
+*.apk
+node_modules
+*/node_modules
+*.log
+.DS_Store
+*.db-shm
+*.db-wal
